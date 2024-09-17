@@ -7,7 +7,7 @@
 
       <!-- Navigation Links -->
       <v-btn text color="white" to="/">Home</v-btn>
-      <v-btn v-if="!loginStore.isLoggedIn" text color="white" to="/register">Register</v-btn>
+      <v-btn v-if="!loginStore.isLoggedIn" text color="white" to="/signup">Sign up</v-btn>
       <v-btn v-if="!loginStore.isLoggedIn" text color="white" to="/login">Login</v-btn>
       <v-btn v-if="loginStore.isLoggedIn" text color="white" to="/logout">Logout</v-btn>
       <v-btn v-if="loginStore.isLoggedIn" text color="white" to="/profile">Profile</v-btn>
