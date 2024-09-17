@@ -20,7 +20,7 @@ interface AuthResponse {
 // Register a new user
 export const register = async (data: RegisterData): Promise<void> => {
   try {
-    const response = await axiosInstance.post('/auth/register', data);
+    const response = await axiosInstance.post('/register', data);
     console.log(response.data);
   } catch (error) {
     console.error('Registration failed:', error);
@@ -31,7 +31,7 @@ export const register = async (data: RegisterData): Promise<void> => {
 // Login a user
 export const login = async (data: LoginData): Promise<AuthResponse> => {
   try {
-    const response = await axiosInstance.post<AuthResponse>('/auth/login', data);
+    const response = await axiosInstance.post<AuthResponse>('/login', data);
     const token = response.data.token;
     localStorage.setItem('token', token); // Store the token in local storage
     return response.data;

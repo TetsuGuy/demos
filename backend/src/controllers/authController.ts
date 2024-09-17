@@ -26,6 +26,8 @@ export const register = async (req: Request, res: Response): Promise<void> => {
 export const login = async (req: Request, res: Response): Promise<void> => {
   const { email, password } = req.body;
 
+  console.log(req.body);
+
   try {
     const [rows] = await db.execute('SELECT * FROM users WHERE email = ?', [email]);
 
