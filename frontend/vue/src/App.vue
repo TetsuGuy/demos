@@ -52,4 +52,8 @@ router.beforeEach((to, from, next) => {
 .v-container {
   margin-top: 20px;
 }
+
+.v-main {
+  background: #79ff003d;
+}
 </style>

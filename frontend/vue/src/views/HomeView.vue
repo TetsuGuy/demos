@@ -1,7 +1,7 @@
 <template>
   <v-container fluid>
     <!-- Hero Section -->
-    <v-row class="d-flex align-center justify-center mb-5" style="background: url('path/to/your/garden-image.jpg') center/cover; height: 300px;">
+    <v-row class="d-flex align-center justify-center mb-5" style="background: url('/img/background.jpg') center/cover; height: 300px;">
       <v-col cols="12" class="text-center">
         <h1 class="display-2 white--text font-weight-bold">Welcome to Smart Garden Automation</h1>
         <p class="white--text">Automate everything from watering your lawn to controlling your robotic greenhouse</p>
